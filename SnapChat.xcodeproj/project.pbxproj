@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7505E2711C195351008D56C3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505E2701C195351008D56C3 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		7505E2751C195ABB008D56C3 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505E2741C195ABB008D56C3 /* ParseFacebookUtilsV4.framework */; settings = {ASSET_TAGS = (); }; };
+		7505E2771C196C8B008D56C3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505E2761C196C8B008D56C3 /* Accounts.framework */; };
+		7505E2791C196C92008D56C3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505E2781C196C92008D56C3 /* Social.framework */; };
+		7505E27B1C1976AC008D56C3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505E27A1C1976AC008D56C3 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		7505E27D1C1B4321008D56C3 /* userPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7505E27C1C1B4321008D56C3 /* userPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		753176281C21EC6D006780F6 /* friendsImagesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753176271C21EC6D006780F6 /* friendsImagesDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7553C96F1C2278FD008BFE57 /* chatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553C96E1C2278FD008BFE57 /* chatViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7553C9711C228206008BFE57 /* chatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553C9701C228206008BFE57 /* chatTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		757481381C1F34DD00245F6B /* imageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757481371C1F34DD00245F6B /* imageDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7574813A1C1F365100245F6B /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 757481391C1F365100245F6B /* default.jpg */; settings = {ASSET_TAGS = (); }; };
+		7574813C1C1F446C00245F6B /* friendsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7574813B1C1F446C00245F6B /* friendsListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7574813E1C1F622800245F6B /* friendsImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7574813D1C1F622800245F6B /* friendsImagesCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		757481401C1FC42600245F6B /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7574813F1C1FC42600245F6B /* settingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		75A290121C212F5600DB29C9 /* SettingsPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A290111C212F5600DB29C9 /* SettingsPageTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		75A290141C2142E200DB29C9 /* bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A290131C2142E200DB29C9 /* bg.jpeg */; settings = {ASSET_TAGS = (); }; };
+		75A290161C214A0700DB29C9 /* bg1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75A290151C214A0700DB29C9 /* bg1.jpeg */; settings = {ASSET_TAGS = (); }; };
+		75A477591C220918002B3AD1 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A477571C220918002B3AD1 /* Icon-Small-50.png */; settings = {ASSET_TAGS = (); }; };
+		75A4775A1C220918002B3AD1 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A477581C220918002B3AD1 /* Icon-Small-50@2x.png */; settings = {ASSET_TAGS = (); }; };
+		75A4775C1C220EE0002B3AD1 /* woman-man-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A4775B1C220EE0002B3AD1 /* woman-man-7.png */; settings = {ASSET_TAGS = (); }; };
+		75A4775E1C220F2D002B3AD1 /* circle-user-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A4775D1C220F2D002B3AD1 /* circle-user-7.png */; settings = {ASSET_TAGS = (); }; };
+		75A477601C220F43002B3AD1 /* album-simple-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A4775F1C220F43002B3AD1 /* album-simple-7.png */; settings = {ASSET_TAGS = (); }; };
+		75A477621C220F5C002B3AD1 /* dot-more-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A477611C220F5C002B3AD1 /* dot-more-7.png */; settings = {ASSET_TAGS = (); }; };
+		75A477641C220F89002B3AD1 /* home-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A477631C220F89002B3AD1 /* home-7.png */; settings = {ASSET_TAGS = (); }; };
+		75A477661C220FCE002B3AD1 /* snapchat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A477651C220FCE002B3AD1 /* snapchat@2x.png */; settings = {ASSET_TAGS = (); }; };
+		75A4776C1C2215C3002B3AD1 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A477671C2215C3002B3AD1 /* images.png */; settings = {ASSET_TAGS = (); }; };
+		75A4776D1C2215C3002B3AD1 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A477681C2215C3002B3AD1 /* user.png */; settings = {ASSET_TAGS = (); }; };
+		75A4776E1C2215C3002B3AD1 /* allusers.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A477691C2215C3002B3AD1 /* allusers.png */; settings = {ASSET_TAGS = (); }; };
+		75A4776F1C2215C3002B3AD1 /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A4776A1C2215C3002B3AD1 /* friends.png */; settings = {ASSET_TAGS = (); }; };
+		75A477701C2215C3002B3AD1 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A4776B1C2215C3002B3AD1 /* home.png */; settings = {ASSET_TAGS = (); }; };
+		75B25C631C1BFAA600C8CB9F /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B25C621C1BFAA600C8CB9F /* ParseUI.framework */; settings = {ASSET_TAGS = (); }; };
+		75C416611C18589D00FF9A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C416601C18589D00FF9A2D /* AppDelegate.swift */; };
+		75C416631C18589D00FF9A2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C416621C18589D00FF9A2D /* ViewController.swift */; };
+		75C416661C18589D00FF9A2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C416641C18589D00FF9A2D /* Main.storyboard */; };
+		75C416681C18589D00FF9A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C416671C18589D00FF9A2D /* Assets.xcassets */; };
+		75C4166B1C18589D00FF9A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C416691C18589D00FF9A2D /* LaunchScreen.storyboard */; };
+		75C416761C18589D00FF9A2D /* SnapChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C416751C18589D00FF9A2D /* SnapChatTests.swift */; };
+		75C416811C18589D00FF9A2D /* SnapChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C416801C18589D00FF9A2D /* SnapChatUITests.swift */; };
+		75C416921C1872EE00FF9A2D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C416901C1872EE00FF9A2D /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		75C416931C1872EE00FF9A2D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C416911C1872EE00FF9A2D /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		75C4169C1C1873B900FF9A2D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C416941C1873B900FF9A2D /* AudioToolbox.framework */; };
+		75C4169D1C1873B900FF9A2D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C416951C1873B900FF9A2D /* CFNetwork.framework */; };
+		75C4169E1C1873B900FF9A2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C416961C1873B900FF9A2D /* CoreGraphics.framework */; };
+		75C4169F1C1873B900FF9A2D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C416971C1873B900FF9A2D /* CoreLocation.framework */; };
+		75C416A01C1873B900FF9A2D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C416981C1873B900FF9A2D /* QuartzCore.framework */; };
+		75C416A11C1873B900FF9A2D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C416991C1873B900FF9A2D /* Security.framework */; };
+		75C416A21C1873B900FF9A2D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4169A1C1873B900FF9A2D /* StoreKit.framework */; };
+		75C416A31C1873B900FF9A2D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C4169B1C1873B900FF9A2D /* SystemConfiguration.framework */; };
+		75C416A51C1873EF00FF9A2D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C416A41C1873EF00FF9A2D /* libz.tbd */; };
+		75C416A71C1873F800FF9A2D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C416A61C1873F800FF9A2D /* libsqlite3.tbd */; };
+		75C416AA1C18813700FF9A2D /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C416A91C18813700FF9A2D /* signUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		75C416AC1C189A9300FF9A2D /* allUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C416AB1C189A9300FF9A2D /* allUsersTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		75C416B51C18A9C300FF9A2D /* FacebookBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C416B41C18A9C300FF9A2D /* FacebookBridge.m */; settings = {ASSET_TAGS = (); }; };
+		75D19BFE1C1BFEB7001A24E2 /* photosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D19BFD1C1BFEB7001A24E2 /* photosCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		75D19C001C1C1C48001A24E2 /* imagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D19BFF1C1C1C48001A24E2 /* imagesCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		75D19C021C1C2BFA001A24E2 /* customCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D19C011C1C2BFA001A24E2 /* customCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		75D5CA441C1BD554005BD11C /* field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75D5CA431C1BD554005BD11C /* field.jpg */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75C416721C18589D00FF9A2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C416551C18589C00FF9A2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75C4165C1C18589D00FF9A2D;
+			remoteInfo = SnapChat;
+		};
+		75C4167D1C18589D00FF9A2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C416551C18589C00FF9A2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75C4165C1C18589D00FF9A2D;
+			remoteInfo = SnapChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7505E2701C195351008D56C3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7505E2741C195ABB008D56C3 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		7505E2761C196C8B008D56C3 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		7505E2781C196C92008D56C3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7505E27A1C1976AC008D56C3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7505E27C1C1B4321008D56C3 /* userPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userPageViewController.swift; sourceTree = "<group>"; };
+		753176271C21EC6D006780F6 /* friendsImagesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = friendsImagesDetailViewController.swift; sourceTree = "<group>"; };
+		7553C96E1C2278FD008BFE57 /* chatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chatViewController.swift; sourceTree = "<group>"; };
+		7553C9701C228206008BFE57 /* chatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chatTableViewController.swift; sourceTree = "<group>"; };
+		757481371C1F34DD00245F6B /* imageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageDetailViewController.swift; sourceTree = "<group>"; };
+		757481391C1F365100245F6B /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
+		7574813B1C1F446C00245F6B /* friendsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = friendsListTableViewController.swift; sourceTree = "<group>"; };
+		7574813D1C1F622800245F6B /* friendsImagesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = friendsImagesCollectionViewController.swift; sourceTree = "<group>"; };
+		7574813F1C1FC42600245F6B /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		75A290111C212F5600DB29C9 /* SettingsPageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPageTableViewController.swift; sourceTree = "<group>"; };
+		75A290131C2142E200DB29C9 /* bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpeg; sourceTree = "<group>"; };
+		75A290151C214A0700DB29C9 /* bg1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpeg; sourceTree = "<group>"; };
+		75A477571C220918002B3AD1 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		75A477581C220918002B3AD1 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		75A4775B1C220EE0002B3AD1 /* woman-man-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "woman-man-7.png"; sourceTree = "<group>"; };
+		75A4775D1C220F2D002B3AD1 /* circle-user-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-user-7.png"; sourceTree = "<group>"; };
+		75A4775F1C220F43002B3AD1 /* album-simple-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album-simple-7.png"; sourceTree = "<group>"; };
+		75A477611C220F5C002B3AD1 /* dot-more-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dot-more-7.png"; sourceTree = "<group>"; };
+		75A477631C220F89002B3AD1 /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
+		75A477651C220FCE002B3AD1 /* snapchat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snapchat@2x.png"; sourceTree = "<group>"; };
+		75A477671C2215C3002B3AD1 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		75A477681C2215C3002B3AD1 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		75A477691C2215C3002B3AD1 /* allusers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = allusers.png; sourceTree = "<group>"; };
+		75A4776A1C2215C3002B3AD1 /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
+		75A4776B1C2215C3002B3AD1 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		75B25C621C1BFAA600C8CB9F /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		75C4165D1C18589D00FF9A2D /* SnapChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C416601C18589D00FF9A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75C416621C18589D00FF9A2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75C416651C18589D00FF9A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75C416671C18589D00FF9A2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75C4166A1C18589D00FF9A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75C4166C1C18589D00FF9A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C416711C18589D00FF9A2D /* SnapChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C416751C18589D00FF9A2D /* SnapChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChatTests.swift; sourceTree = "<group>"; };
+		75C416771C18589D00FF9A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C4167C1C18589D00FF9A2D /* SnapChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C416801C18589D00FF9A2D /* SnapChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChatUITests.swift; sourceTree = "<group>"; };
+		75C416821C18589D00FF9A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C416901C1872EE00FF9A2D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = SnapChat/Bolts.framework; sourceTree = "<group>"; };
+		75C416911C1872EE00FF9A2D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = SnapChat/Parse.framework; sourceTree = "<group>"; };
+		75C416941C1873B900FF9A2D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		75C416951C1873B900FF9A2D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		75C416961C1873B900FF9A2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		75C416971C1873B900FF9A2D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		75C416981C1873B900FF9A2D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		75C416991C1873B900FF9A2D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		75C4169A1C1873B900FF9A2D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		75C4169B1C1873B900FF9A2D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		75C416A41C1873EF00FF9A2D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		75C416A61C1873F800FF9A2D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		75C416A91C18813700FF9A2D /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		75C416AB1C189A9300FF9A2D /* allUsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allUsersTableViewController.swift; sourceTree = "<group>"; };
+		75C416B31C18A9C200FF9A2D /* SnapChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnapChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		75C416B41C18A9C300FF9A2D /* FacebookBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookBridge.m; sourceTree = "<group>"; };
+		75D19BFD1C1BFEB7001A24E2 /* photosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photosCollectionViewController.swift; sourceTree = "<group>"; };
+		75D19BFF1C1C1C48001A24E2 /* imagesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imagesCollectionViewController.swift; sourceTree = "<group>"; };
+		75D19C011C1C2BFA001A24E2 /* customCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customCollectionViewCell.swift; sourceTree = "<group>"; };
+		75D5CA431C1BD554005BD11C /* field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = field.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75C4165A1C18589D00FF9A2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B25C631C1BFAA600C8CB9F /* ParseUI.framework in Frameworks */,
+				7505E27B1C1976AC008D56C3 /* FBSDKLoginKit.framework in Frameworks */,
+				7505E2791C196C92008D56C3 /* Social.framework in Frameworks */,
+				7505E2771C196C8B008D56C3 /* Accounts.framework in Frameworks */,
+				75C416A71C1873F800FF9A2D /* libsqlite3.tbd in Frameworks */,
+				75C416A51C1873EF00FF9A2D /* libz.tbd in Frameworks */,
+				75C4169C1C1873B900FF9A2D /* AudioToolbox.framework in Frameworks */,
+				75C4169D1C1873B900FF9A2D /* CFNetwork.framework in Frameworks */,
+				75C4169E1C1873B900FF9A2D /* CoreGraphics.framework in Frameworks */,
+				75C4169F1C1873B900FF9A2D /* CoreLocation.framework in Frameworks */,
+				75C416A01C1873B900FF9A2D /* QuartzCore.framework in Frameworks */,
+				75C416A11C1873B900FF9A2D /* Security.framework in Frameworks */,
+				75C416A21C1873B900FF9A2D /* StoreKit.framework in Frameworks */,
+				75C416A31C1873B900FF9A2D /* SystemConfiguration.framework in Frameworks */,
+				7505E2711C195351008D56C3 /* FBSDKCoreKit.framework in Frameworks */,
+				75C416931C1872EE00FF9A2D /* Parse.framework in Frameworks */,
+				75C416921C1872EE00FF9A2D /* Bolts.framework in Frameworks */,
+				7505E2751C195ABB008D56C3 /* ParseFacebookUtilsV4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C4166E1C18589D00FF9A2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C416791C18589D00FF9A2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75C416541C18589C00FF9A2D = {
+			isa = PBXGroup;
+			children = (
+				7553C9701C228206008BFE57 /* chatTableViewController.swift */,
+				75C416A81C18748A00FF9A2D /* Frameworks */,
+				75C4165F1C18589D00FF9A2D /* SnapChat */,
+				75C416741C18589D00FF9A2D /* SnapChatTests */,
+				75C4167F1C18589D00FF9A2D /* SnapChatUITests */,
+				75C4165E1C18589D00FF9A2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75C4165E1C18589D00FF9A2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75C4165D1C18589D00FF9A2D /* SnapChat.app */,
+				75C416711C18589D00FF9A2D /* SnapChatTests.xctest */,
+				75C4167C1C18589D00FF9A2D /* SnapChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75C4165F1C18589D00FF9A2D /* SnapChat */ = {
+			isa = PBXGroup;
+			children = (
+				75C416601C18589D00FF9A2D /* AppDelegate.swift */,
+				75C416B41C18A9C300FF9A2D /* FacebookBridge.m */,
+				75C416641C18589D00FF9A2D /* Main.storyboard */,
+				7553C96E1C2278FD008BFE57 /* chatViewController.swift */,
+				75C416621C18589D00FF9A2D /* ViewController.swift */,
+				75C416A91C18813700FF9A2D /* signUpViewController.swift */,
+				75C416AB1C189A9300FF9A2D /* allUsersTableViewController.swift */,
+				7505E27C1C1B4321008D56C3 /* userPageViewController.swift */,
+				75D19BFF1C1C1C48001A24E2 /* imagesCollectionViewController.swift */,
+				75D19C011C1C2BFA001A24E2 /* customCollectionViewCell.swift */,
+				75D19BFD1C1BFEB7001A24E2 /* photosCollectionViewController.swift */,
+				757481371C1F34DD00245F6B /* imageDetailViewController.swift */,
+				7574813B1C1F446C00245F6B /* friendsListTableViewController.swift */,
+				7574813D1C1F622800245F6B /* friendsImagesCollectionViewController.swift */,
+				753176271C21EC6D006780F6 /* friendsImagesDetailViewController.swift */,
+				7574813F1C1FC42600245F6B /* settingsViewController.swift */,
+				75A290111C212F5600DB29C9 /* SettingsPageTableViewController.swift */,
+				75C416671C18589D00FF9A2D /* Assets.xcassets */,
+				75A477671C2215C3002B3AD1 /* images.png */,
+				75A477681C2215C3002B3AD1 /* user.png */,
+				75A477691C2215C3002B3AD1 /* allusers.png */,
+				75A4776A1C2215C3002B3AD1 /* friends.png */,
+				75A4776B1C2215C3002B3AD1 /* home.png */,
+				75A477571C220918002B3AD1 /* Icon-Small-50.png */,
+				75A477581C220918002B3AD1 /* Icon-Small-50@2x.png */,
+				75A477651C220FCE002B3AD1 /* snapchat@2x.png */,
+				75A290151C214A0700DB29C9 /* bg1.jpeg */,
+				75A477611C220F5C002B3AD1 /* dot-more-7.png */,
+				75A477631C220F89002B3AD1 /* home-7.png */,
+				75A4775F1C220F43002B3AD1 /* album-simple-7.png */,
+				75A4775D1C220F2D002B3AD1 /* circle-user-7.png */,
+				75A290131C2142E200DB29C9 /* bg.jpeg */,
+				75A4775B1C220EE0002B3AD1 /* woman-man-7.png */,
+				757481391C1F365100245F6B /* default.jpg */,
+				75D5CA431C1BD554005BD11C /* field.jpg */,
+				75C416691C18589D00FF9A2D /* LaunchScreen.storyboard */,
+				75C4166C1C18589D00FF9A2D /* Info.plist */,
+				75C416B31C18A9C200FF9A2D /* SnapChat-Bridging-Header.h */,
+			);
+			path = SnapChat;
+			sourceTree = "<group>";
+		};
+		75C416741C18589D00FF9A2D /* SnapChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				75C416751C18589D00FF9A2D /* SnapChatTests.swift */,
+				75C416771C18589D00FF9A2D /* Info.plist */,
+			);
+			path = SnapChatTests;
+			sourceTree = "<group>";
+		};
+		75C4167F1C18589D00FF9A2D /* SnapChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75C416801C18589D00FF9A2D /* SnapChatUITests.swift */,
+				75C416821C18589D00FF9A2D /* Info.plist */,
+			);
+			path = SnapChatUITests;
+			sourceTree = "<group>";
+		};
+		75C416A81C18748A00FF9A2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75B25C621C1BFAA600C8CB9F /* ParseUI.framework */,
+				7505E27A1C1976AC008D56C3 /* FBSDKLoginKit.framework */,
+				7505E2781C196C92008D56C3 /* Social.framework */,
+				7505E2761C196C8B008D56C3 /* Accounts.framework */,
+				7505E2741C195ABB008D56C3 /* ParseFacebookUtilsV4.framework */,
+				7505E2701C195351008D56C3 /* FBSDKCoreKit.framework */,
+				75C416A61C1873F800FF9A2D /* libsqlite3.tbd */,
+				75C416A41C1873EF00FF9A2D /* libz.tbd */,
+				75C416941C1873B900FF9A2D /* AudioToolbox.framework */,
+				75C416951C1873B900FF9A2D /* CFNetwork.framework */,
+				75C416961C1873B900FF9A2D /* CoreGraphics.framework */,
+				75C416971C1873B900FF9A2D /* CoreLocation.framework */,
+				75C416981C1873B900FF9A2D /* QuartzCore.framework */,
+				75C416991C1873B900FF9A2D /* Security.framework */,
+				75C4169A1C1873B900FF9A2D /* StoreKit.framework */,
+				75C4169B1C1873B900FF9A2D /* SystemConfiguration.framework */,
+				75C416901C1872EE00FF9A2D /* Bolts.framework */,
+				75C416911C1872EE00FF9A2D /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75C4165C1C18589D00FF9A2D /* SnapChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C416851C18589D00FF9A2D /* Build configuration list for PBXNativeTarget "SnapChat" */;
+			buildPhases = (
+				75C416591C18589D00FF9A2D /* Sources */,
+				75C4165A1C18589D00FF9A2D /* Frameworks */,
+				75C4165B1C18589D00FF9A2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapChat;
+			productName = SnapChat;
+			productReference = 75C4165D1C18589D00FF9A2D /* SnapChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75C416701C18589D00FF9A2D /* SnapChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C416881C18589D00FF9A2D /* Build configuration list for PBXNativeTarget "SnapChatTests" */;
+			buildPhases = (
+				75C4166D1C18589D00FF9A2D /* Sources */,
+				75C4166E1C18589D00FF9A2D /* Frameworks */,
+				75C4166F1C18589D00FF9A2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75C416731C18589D00FF9A2D /* PBXTargetDependency */,
+			);
+			name = SnapChatTests;
+			productName = SnapChatTests;
+			productReference = 75C416711C18589D00FF9A2D /* SnapChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75C4167B1C18589D00FF9A2D /* SnapChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C4168B1C18589D00FF9A2D /* Build configuration list for PBXNativeTarget "SnapChatUITests" */;
+			buildPhases = (
+				75C416781C18589D00FF9A2D /* Sources */,
+				75C416791C18589D00FF9A2D /* Frameworks */,
+				75C4167A1C18589D00FF9A2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75C4167E1C18589D00FF9A2D /* PBXTargetDependency */,
+			);
+			name = SnapChatUITests;
+			productName = SnapChatUITests;
+			productReference = 75C4167C1C18589D00FF9A2D /* SnapChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75C416551C18589C00FF9A2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = TeamTreeHouse;
+				TargetAttributes = {
+					75C4165C1C18589D00FF9A2D = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					75C416701C18589D00FF9A2D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 75C4165C1C18589D00FF9A2D;
+					};
+					75C4167B1C18589D00FF9A2D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 75C4165C1C18589D00FF9A2D;
+					};
+				};
+			};
+			buildConfigurationList = 75C416581C18589C00FF9A2D /* Build configuration list for PBXProject "SnapChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75C416541C18589C00FF9A2D;
+			productRefGroup = 75C4165E1C18589D00FF9A2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75C4165C1C18589D00FF9A2D /* SnapChat */,
+				75C416701C18589D00FF9A2D /* SnapChatTests */,
+				75C4167B1C18589D00FF9A2D /* SnapChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75C4165B1C18589D00FF9A2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A4775A1C220918002B3AD1 /* Icon-Small-50@2x.png in Resources */,
+				75A477621C220F5C002B3AD1 /* dot-more-7.png in Resources */,
+				75A477601C220F43002B3AD1 /* album-simple-7.png in Resources */,
+				75A4776F1C2215C3002B3AD1 /* friends.png in Resources */,
+				75A4776C1C2215C3002B3AD1 /* images.png in Resources */,
+				75A4776E1C2215C3002B3AD1 /* allusers.png in Resources */,
+				75A290141C2142E200DB29C9 /* bg.jpeg in Resources */,
+				75D5CA441C1BD554005BD11C /* field.jpg in Resources */,
+				75A4775C1C220EE0002B3AD1 /* woman-man-7.png in Resources */,
+				75A477661C220FCE002B3AD1 /* snapchat@2x.png in Resources */,
+				75A4775E1C220F2D002B3AD1 /* circle-user-7.png in Resources */,
+				7574813A1C1F365100245F6B /* default.jpg in Resources */,
+				75C4166B1C18589D00FF9A2D /* LaunchScreen.storyboard in Resources */,
+				75A290161C214A0700DB29C9 /* bg1.jpeg in Resources */,
+				75A477641C220F89002B3AD1 /* home-7.png in Resources */,
+				75A477591C220918002B3AD1 /* Icon-Small-50.png in Resources */,
+				75A477701C2215C3002B3AD1 /* home.png in Resources */,
+				75A4776D1C2215C3002B3AD1 /* user.png in Resources */,
+				75C416681C18589D00FF9A2D /* Assets.xcassets in Resources */,
+				75C416661C18589D00FF9A2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C4166F1C18589D00FF9A2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C4167A1C18589D00FF9A2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75C416591C18589D00FF9A2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D19C021C1C2BFA001A24E2 /* customCollectionViewCell.swift in Sources */,
+				75D19C001C1C1C48001A24E2 /* imagesCollectionViewController.swift in Sources */,
+				7553C96F1C2278FD008BFE57 /* chatViewController.swift in Sources */,
+				7553C9711C228206008BFE57 /* chatTableViewController.swift in Sources */,
+				75C416631C18589D00FF9A2D /* ViewController.swift in Sources */,
+				75D19BFE1C1BFEB7001A24E2 /* photosCollectionViewController.swift in Sources */,
+				75A290121C212F5600DB29C9 /* SettingsPageTableViewController.swift in Sources */,
+				757481401C1FC42600245F6B /* settingsViewController.swift in Sources */,
+				75C416611C18589D00FF9A2D /* AppDelegate.swift in Sources */,
+				75C416B51C18A9C300FF9A2D /* FacebookBridge.m in Sources */,
+				757481381C1F34DD00245F6B /* imageDetailViewController.swift in Sources */,
+				75C416AC1C189A9300FF9A2D /* allUsersTableViewController.swift in Sources */,
+				7505E27D1C1B4321008D56C3 /* userPageViewController.swift in Sources */,
+				75C416AA1C18813700FF9A2D /* signUpViewController.swift in Sources */,
+				7574813E1C1F622800245F6B /* friendsImagesCollectionViewController.swift in Sources */,
+				7574813C1C1F446C00245F6B /* friendsListTableViewController.swift in Sources */,
+				753176281C21EC6D006780F6 /* friendsImagesDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C4166D1C18589D00FF9A2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C416761C18589D00FF9A2D /* SnapChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C416781C18589D00FF9A2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C416811C18589D00FF9A2D /* SnapChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75C416731C18589D00FF9A2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75C4165C1C18589D00FF9A2D /* SnapChat */;
+			targetProxy = 75C416721C18589D00FF9A2D /* PBXContainerItemProxy */;
+		};
+		75C4167E1C18589D00FF9A2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75C4165C1C18589D00FF9A2D /* SnapChat */;
+			targetProxy = 75C4167D1C18589D00FF9A2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75C416641C18589D00FF9A2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C416651C18589D00FF9A2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75C416691C18589D00FF9A2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C4166A1C18589D00FF9A2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75C416831C18589D00FF9A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75C416841C18589D00FF9A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75C416861C18589D00FF9A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SnapChat",
+					/Users/hardikdedhia/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SnapChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.SnapChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SnapChat/SnapChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75C416871C18589D00FF9A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SnapChat",
+					/Users/hardikdedhia/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SnapChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.SnapChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SnapChat/SnapChat-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		75C416891C18589D00FF9A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnapChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.SnapChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnapChat.app/SnapChat";
+			};
+			name = Debug;
+		};
+		75C4168A1C18589D00FF9A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnapChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.SnapChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnapChat.app/SnapChat";
+			};
+			name = Release;
+		};
+		75C4168C1C18589D00FF9A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SnapChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.SnapChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SnapChat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		75C4168D1C18589D00FF9A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SnapChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.SnapChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SnapChat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75C416581C18589C00FF9A2D /* Build configuration list for PBXProject "SnapChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C416831C18589D00FF9A2D /* Debug */,
+				75C416841C18589D00FF9A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C416851C18589D00FF9A2D /* Build configuration list for PBXNativeTarget "SnapChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C416861C18589D00FF9A2D /* Debug */,
+				75C416871C18589D00FF9A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C416881C18589D00FF9A2D /* Build configuration list for PBXNativeTarget "SnapChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C416891C18589D00FF9A2D /* Debug */,
+				75C4168A1C18589D00FF9A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C4168B1C18589D00FF9A2D /* Build configuration list for PBXNativeTarget "SnapChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C4168C1C18589D00FF9A2D /* Debug */,
+				75C4168D1C18589D00FF9A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75C416551C18589C00FF9A2D /* Project object */;
+}
