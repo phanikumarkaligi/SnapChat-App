@@ -24,7 +24,7 @@ class signUpViewController: UIViewController {
 
  @IBAction   func signUpMethod() {
         let user = PFUser()
-    if usernameTextField.text != nil && passwordTextField.text != nil && emailTextField.text != nil {
+    if usernameTextField.text != "" && passwordTextField.text != "" && emailTextField.text != "" {
         
         user.username = usernameTextField.text
         user.password = passwordTextField.text
@@ -62,9 +62,9 @@ class signUpViewController: UIViewController {
  }
   
     func showErrorMessage(errorString: String)-> () {
-        let alert = UIAlertController(title: "Message", message:errorString, preferredStyle: UIAlertControllerStyle.ActionSheet )
+        let alert = UIAlertController(title: "Message", message:errorString, preferredStyle: UIAlertControllerStyle.Alert )
         let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (action :UIAlertAction) -> Void in
-            self.resetFields()
+//            self.resetFields()
             if self.userRegistrationSuccessful {
                 self.cancelMethod()
             }
