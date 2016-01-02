@@ -118,6 +118,12 @@ class allUsersTableViewController: UITableViewController {
         if cell?.accessoryType == UITableViewCellAccessoryType.None {
             cell?.accessoryType = .Checkmark
         // parse freiends list code
+            let a = cell?.textLabel?.text!
+            let q = PFQuery(className: "friends")
+//            q.whereKey("follower", equalTo: "\(PFUser.currentUser()?.username!)")
+            q.whereKey("following", equalTo:"\(a!)")
+            q.findObjectsInBackgroundWithBlock({ (objects, err ) -> Void in
+                if objects!.count == 0 {
         let friendsList = PFObject(className: "friends")
         friendsList["following"] = cell?.textLabel?.text!
         friendsList["email"] = cell?.detailTextLabel?.text!
@@ -131,6 +137,8 @@ class allUsersTableViewController: UITableViewController {
                 print("error")
             }
         })
+                }
+            })
  }
         else {
              cell?.accessoryType = .None
@@ -143,7 +151,7 @@ class allUsersTableViewController: UITableViewController {
         q.findObjectsInBackgroundWithBlock({ (objects, err ) -> Void in
             for object : PFObject? in objects!  {
                 if let obj = object {
-                obj.deleteInBackground()
+                obj.deleteEventually()
                                    }
             }
             

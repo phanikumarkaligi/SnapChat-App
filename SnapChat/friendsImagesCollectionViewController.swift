@@ -39,7 +39,7 @@ class friendsImagesCollectionViewController: UICollectionViewController {
     
     
     func fetchImages() {
-        let query = PFQuery(className:sstr!)
+        let query = PFQuery(className:stringForRecevingUser)
         
         query.findObjectsInBackgroundWithBlock({ (objectsArray, err) -> Void in
             

@@ -80,8 +80,8 @@ class friendsListTableViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let dest = segue.destinationViewController as! chatViewController
-        dest.runningUser = localStringForSelectedUser!
+        let dest = segue.destinationViewController as! friendsImagesCollectionViewController
+        dest.stringForRecevingUser = localStringForSelectedUser!
     }
 
     /*
